@@ -1,6 +1,6 @@
-# fly.toml file generated for snowy-dew-6077 on 2023-03-05T12:01:33Z
+# fly.toml file generated for laravel2 on 2023-03-15T11:45:56Z
 
-app = "snowy-dew-6077"
+app = "laravel2"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -11,18 +11,18 @@ processes = []
     PHP_VERSION = "8.1"
 
 [env]
+  APP_DEBUG = "false"
   APP_ENV = "production"
+  APP_NAME = "Laravel"
+  APP_URL = "https://laravel2.fly.dev"
+  DB_CONNECTION = "pgsql"
+  DB_DATABASE = "postgres"
+  DB_HOST = "db.ylolgcsyenqbuqajrtnj.supabase.co"
+  DB_PORT = "5432"
+  DB_USERNAME = "postgres"
   LOG_CHANNEL = "stderr"
   LOG_LEVEL = "info"
   LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
-  APP_NAME = "Laravel"
-  APP_DEBUG = false
-  APP_URL = "https://snowy-dew-6077.fly.dev"
-  DB_CONNECTION = "pgsql"
-  DB_HOST="db.alxljzozzrrgkqubgvbd.supabase.co"
-  DB_PORT=5432
-  DB_DATABASE="postgres"
-  DB_USERNAME="postgres"
 
 [experimental]
   auto_rollback = true
